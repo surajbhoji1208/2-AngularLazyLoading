@@ -1,0 +1,18 @@
+<!-- 
+  <ul>
+   
+    <li > <a routerLink="about">about</a></li>
+    <li> <a routerLink="contact">contact</a></li>
+    <li> <a routerLink="./product/bike">bike</a></li>
+
+  </ul> -->
+  
+
+<button mat-button [matMenuTriggerFor]="aboveMenu">click me</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item routerLink="about">about</button>
+  <button mat-menu-item routerLink="contact">Contact</button>
+  <button mat-menu-item routerLink="./product/bike">bike</button>
+</mat-menu>
+
+<router-outlet></router-outlet>
